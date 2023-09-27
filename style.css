@@ -1,0 +1,264 @@
+:root {
+  --backGButton: rgb(229, 103, 13);
+  --degBackButton: linear-gradient(
+    146deg,
+    rgba(15, 15, 15, 0.9247899843531162) 6%,
+    rgba(74, 74, 74, 1) 100%
+  );
+  --radiusButton: 10px;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+
+  margin: 20px 0px 0px 0px;
+
+  background-color: rgb(0, 0, 0);
+}
+.block {
+  height: max-content;
+  width: fit-content;
+  /*background-color: aqua;*/
+  margin: auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100vw;
+  background-color: rgba(240, 248, 255, 0.126);
+  text-align: center;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /*align-items: auto;*/
+}
+
+h1 {
+  font-size: xx-large;
+  color: aliceblue;
+}
+
+.pic {
+  height: 50px;
+  width: 50px;
+  padding-top: 10px;
+}
+
+.machine {
+  margin: 0 auto;
+
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 70px 1fr;
+  margin-top: 100px;
+  /*padding-top: 200px;*/
+  /*
+   
+      grid-template-areas: 
+   "rez"
+   "opt "
+   "act ";
+
+   
+   
+   */
+
+  height: auto;
+  width: min(100vh, 100vw, 500px);
+
+  border: 12px solid;
+  border-color: rgba(255, 174, 0, 0.142);
+  border-radius: 10px;
+
+  font-size: 30px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*  ################################# LES ECRANS ####################################    */
+
+.display {
+  display: grid;
+  grid-template-rows: 210px 70px;
+
+  height: 100%;
+
+  row-gap: 3px;
+
+  background-color: rgba(41, 41, 41, 0.627);
+}
+
+.ticket {
+  list-style-type: none;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  height: 102%;
+
+  color: rgb(224, 170, 64);
+
+  text-align: right;
+  padding-right: 20px;
+
+  font-family: monospace;
+  font-style: italic;
+}
+
+.tikDisplay {
+  /*align-items: end;*/
+  align-self: end;
+  padding-bottom: 20px;
+}
+
+.rez {
+  margin-top: 0px;
+
+  height: 100%;
+
+  line-height: 70px;
+  color: rgb(224, 170, 64);
+
+  text-align: right;
+  padding-right: 20px;
+
+  background-color: black;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(29, 29, 29, 1) 85%,
+    rgba(45, 45, 45, 1) 95%
+  );
+
+  padding: 0px 20px 00px 0px;
+  color: whitesmoke;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+}
+
+/*  ################################# LES BOUTONS ####################################    */
+
+button {
+  /*
+      background-color:var(--backGButton);
+      background: var(--degBackButton);*/
+
+  background: rgb(41, 41, 41);
+
+  border-radius: 5px;
+
+  font-size: 40px;
+
+  border-color: black;
+
+  border: 0px;
+
+  color: antiquewhite;
+}
+
+button:hover {
+  /*
+         background-color:var(--backGButton);
+         background: var(--degBackButton);*/
+
+  background: rgb(16, 16, 16);
+
+  border-radius: 5px;
+
+  font-size: 35px;
+
+  border-color: black;
+
+  color: rgb(255, 115, 0);
+  transform: translateY(2px);
+}
+
+.act {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  gap: 3px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 35px;
+
+  column-gap: 40px;
+
+  background-color: rgba(152, 83, 0, 0.154);
+  color: aliceblue;
+
+  text-align: center;
+
+  margin: 0px 0px 0px 0px;
+
+  padding: 15px 20px 0px 20px;
+}
+
+.opt {
+  font-size: 18px;
+}
+
+.num {
+  font-size: 30px;
+
+  color: rgb(255, 212, 0);
+}
+
+.num:hover {
+  font-size: 30px;
+
+  color: rgb(255, 212, 0);
+  border: 0px;
+}
+
+.mem {
+  font-size: 25px;
+  color: rgb(255, 212, 0);
+}
+
+.mem:hover {
+  font-size: 25px;
+
+  color: rgb(255, 212, 0);
+  transform: translateY(2px);
+}
+
+.otr,
+.po {
+  font-size: 15px;
+  color: azure;
+}
+
+#egal {
+  background: rgb(207, 144, 36);
+  background: linear-gradient(
+    143deg,
+    rgba(207, 144, 36, 1) 2%,
+    rgba(179, 114, 0, 1) 46%,
+    rgba(77, 51, 5, 1) 100%
+  );
+}
+
+/*
+.der {
+
+   background: rgb(0, 0, 0);
+   font-size: 30px;
+
+
+}*/
